@@ -6,18 +6,16 @@ while True:
     try:
         Browser = input("Enter which browser you want (e.g., Chrome or Edge): ")
 
-        # Check if the input is purely alphabetic (no numbers or special characters)
         if not Browser.isalpha():
             raise ValueError("Please give only string text, not numbers or decimals.")
 
-        # Check if the browser input is one of the valid options
         if Browser not in ['Chrome', 'Edge']:
             raise ValueError("Invalid browser choice. Please enter 'Chrome' or 'Edge'.")
 
         break  # If everything is fine, exit the loop
 
     except ValueError as e:
-        print(e)  # Show the error message and prompt the user to try again
+        print(e) 
 
 
 if Browser == 'Chrome':
