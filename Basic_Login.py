@@ -85,6 +85,7 @@ sleep(5)
 
 tax = driver.find_element(By.CLASS_NAME, 'summary_tax_label').text
 print("Products (GST and CGST)", tax)
+
 total = driver.find_element(By.CLASS_NAME, 'summary_total_label').text 
 print("Total Amount", total)
 
